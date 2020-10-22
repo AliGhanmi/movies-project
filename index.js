@@ -45,7 +45,7 @@ var item37=items('THE-CRISTMAS-CABIN','./movieImg/Romance/ThCristmasCabin.jpg','
 var item38=items('THE-NEW-ROMANTIC','./movieImg/Romance/TheNewRomantic.jpg','Romance Movie')
 var item39=items('THE-STORY-OF-US','./movieImg/Romance/TheStoryOfUs.jpg','Romance Movie')
 var item40=items('TIMELESS-LOVE','./movieImg/Romance/TimelessLove.jpg','Romance Movie')
-var movies=[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21,item22,item23,item24,item25,item26,item27,item28,item29,item30,item31,item32,item33,item34,item35,item36,item37,item38,item39,item40]
+var movies=[item35,item2,item3,item39,item5,item6,item33,item8,item21,item30,item11,item12,item23,item14,item15,item16,item17,item28,item19,item20,item9,item22,item13,item24,item25,item26,item27,item18,item29,item1,item31,item32,item7,item34,item10,item36,item37,item38,item4,item40]
 
 function makeMovie(item){
     $("#mainD").append('<div class="all" id="'+item.title+'"></div>')
