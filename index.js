@@ -62,3 +62,16 @@ function makeMovies(movies){
 }
 makeMovies(movies)
 console.log(item11)
+
+
+function test(movies,query){
+    $('#mainD').html('')
+    for(var i=0; i<movies.length; i++){
+        if(movies[i].type===query){
+            makeMovie(movies[i])
+        }
+        else if(!query){
+            makeMovie(movies[i])
+        }
+    }
+}
