@@ -1,0 +1,64 @@
+function items(title,image,type){
+    var item={}
+    item.title=title
+    item.image=image
+    item.type=type
+    return item
+}
+var item1=items('VENOM','./movieImg/Action/Venom.jpg','Action Movie')
+var item2=items('THOR','./movieImg/Action/Thor.jpg','Action Movie')
+var item3=items('SHAFT','./movieImg/Action/Shaft.jpg','Action Movie')
+var item4=items('GODZILLA','./movieImg/Action/Godzilla.png','Action Movie')
+var item5=items('BLOOD-SHOT','./movieImg/Action/BloodShot.jpg','Action Movie')
+var item6=items('WOLVARINE','./movieImg/Action/wolvarine.jpg','Action Movie')
+var item7=items('BLACK-PANTHER','./movieImg/Action/BlackPN.jpg','Action Movie')
+var item8=items('X-MEN','./movieImg/Action/XMen.jpg','Action Movie')
+var item9=items('JHON-WHICK','./movieImg/Action/johnwick.png','Action Movie')
+var item10=items('TRIPLE-THREAT','./movieImg/Action/tripleThreat.jpg','Action Movie')
+var item11=items('A-PERFECT-PLAN','./movieImg/Crime/APerfectplan.jpg','Crime Movie')
+var item12=items('THE-LAST-DAYS-OF-AMERICAN-CRIME','./movieImg/Crime/ThelastDaysOfAmericanCrime.jpg','Crime Movie')
+var item13=items('BAD-BOYS-FOR-LIFE','./movieImg/Crime/BadBoysForLife.jpg','Crime Movie')
+var item14=items('DEVILS-NIGHT','./movieImg/Crime/DevilsNight.jpg','Crime Movie')
+var item15=items('PROJECT-POWER','./movieImg/Crime/projectPower.png','Crime Movie')
+var item16=items('DREAM-LAND','./movieImg/Crime/DreamLand.jpg','Crime Movie')
+var item17=items('EQUAL-STANDARD','./movieImg/Crime/EqualStandard.jpg','Crime Movie')
+var item18=items('LEGACY-OF-THE-BONES','./movieImg/Crime/LegacyOfTheBones.jpg','Crime Movie')
+var item19=items('SUBURRA','./movieImg/Crime/suburra.jpg','Crime Movie')
+var item20=items('THE-NINTH','./movieImg/Crime/TheNinth.jpg','Crime Movie')
+var item21=items('CHUCKY','./movieImg/Horror/Chuky.jpg','Horror Movie')
+var item22=items('CONJURING-2','./movieImg/Horror/CONJ.jpg','Horror Movie')
+var item23=items('CONJURING-3','./movieImg/Horror/conj3.jpg','Horror Movie')
+var item24=items('FEAR-FARM','./movieImg/Horror/fearFarm.jpg','Horror Movie')
+var item25=items('IT','./movieImg/Horror/IT.jpg','Horror Movie')
+var item26=items('THE-NUN','./movieImg/Horror/NAN.jpg','Horror Movie')
+var item27=items('ON-HALLOWEEN','./movieImg/Horror/OnHalloween.jpg','Horror Movie')
+var item28=items('SAW','./movieImg/Horror/saw.jpg','Horror Movie')
+var item29=items('THE-BOY','./movieImg/Horror/theBoy.jpg','Horror Movie')
+var item30=items('WIND-WALKER','./movieImg/Horror/WindWalker.jpg','Horror Movie')
+var item31=items('A-SIMPLE-WEDDING','./movieImg/Romance/ASimpleWedding.jpg','Romance Movie')
+var item32=items('ISI-AND-OSSI','./movieImg/Romance/IsiAndOssi.PNG','Romance Movie')
+var item33=items('I-STILL-BELIEVE','./movieImg/Romance/IStillBelieve.jpg','Romance Movie')
+var item34=items('LETTERS-FROM-THE-HEART','./movieImg/Romance/LettersFromTheHeart.jpg','Romance Movie')
+var item35=items('ORDINARY-LOVE','./movieImg/Romance/OrdinaryLove.jpg','Romance Movie')
+var item36=items('RUNAWAY-ROMANCE','./movieImg/Romance/RunawayRomance.jpg','Romance Movie')
+var item37=items('THE-CRISTMAS-CABIN','./movieImg/Romance/ThCristmasCabin.jpg','Romance Movie')
+var item38=items('THE-NEW-ROMANTIC','./movieImg/Romance/TheNewRomantic.jpg','Romance Movie')
+var item39=items('THE-STORY-OF-US','./movieImg/Romance/TheStoryOfUs.jpg','Romance Movie')
+var item40=items('TIMELESS-LOVE','./movieImg/Romance/TimelessLove.jpg','Romance Movie')
+var movies=[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21,item22,item23,item24,item25,item26,item27,item28,item29,item30,item31,item32,item33,item34,item35,item36,item37,item38,item39,item40]
+
+function makeMovie(item){
+    $("#mainD").append('<div class="all" id="'+item.title+'"></div>')
+    $("#"+item.title).append("<img src='"+item.image+"'></img>")
+    $("#"+item.title).append("<h3>"+item.title+"</h3>")
+    $("#"+item.title).append("<p>"+item.type+"</p>")
+}
+
+function makeMovies(movies){
+    for (var i=0; i<movies.length; i++){
+        makeMovie(movies[i])
+    
+    }
+}
+makeMovies(movies)
+console.log(item11)

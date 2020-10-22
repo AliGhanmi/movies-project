@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: rgba(151, 151, 151, 0.03);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .navv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+    height: 4rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+  
+  #logoImg {
+    height: 45px;
+    margin-right: 10rem;
+  }
+  nav .navLinks {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 30px;
+    font-size: 40px;
+  }
+  nav .navLinks li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #585858;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  .search {
+    width: 250px;
+    height: 40px;
+    background-color: rgba(245, 245, 245, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0px 20px;
+  }
+  #searchInp {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  #II {
+    color: #3a3a3a;
+  }
+  nav .navLinks li a:hover {
+    background-color: #242424;
+    color: white;
+    box-shadow: 5px 10px 30px rgba(53, 53, 53, 0.1);
+    transition: all ease 0.3s;
+  }
+  #main {
+    padding-top: 80px;
+    background-color: #ffffff;
+  }
+  .most_box {
+    width: 430px;
+    height: 250px;
+    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0px 20px 10px 20px;
+    overflow: hidden;
+  }
+  .most_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .Most_heading {
+    padding-left: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+  }
+  #autoWidth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
