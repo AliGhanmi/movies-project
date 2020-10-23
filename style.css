@@ -28,6 +28,9 @@ a {
   top: 0;
   z-index: 100;
 }
+i:hover {
+  cursor: pointer;
+}
 
 #logoImg {
   height: 65px;
@@ -98,6 +101,7 @@ nav .navLinks li a:hover {
   width: 270px;
   background-color: lightgray;
   height: 430px;
+  justify-content: space-between;
 }
 .all img {
   width: 100%;

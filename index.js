@@ -75,3 +75,20 @@ function test(movies,query){
         }
     }
 }
+function search(){
+    var value = $("#searchInp").val().toUpperCase();
+    $('#mainD').html('')
+    for( var i = 0; i < movies.length; i++){
+        var thatMovie = movies[i]
+        // console.log(thatMovie)
+        if ( thatMovie.title.includes(value)){
+            // makeMovie(this.thatMovie)
+            makeMovie(thatMovie)
+            
+        }
+       
+        
+          
+    }
+
+}
