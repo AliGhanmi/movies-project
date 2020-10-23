@@ -49,7 +49,7 @@ var movies=[item35,item2,item3,item39,item5,item6,item33,item8,item21,item30,ite
 
 function makeMovie(item){
     $("#mainD").append('<div class="all" id="'+item.title+'"></div>')
-    $("#"+item.title).append("<img src='"+item.image+"'></img>")
+    $("#"+item.title).append("<img src='"+item.image+"' id="+item.title+"1"+"></img>")
     $("#"+item.title).append("<h3>"+item.title+"</h3>")
     $("#"+item.title).append("<p>"+item.type+"</p>")
 }
@@ -91,4 +91,52 @@ function search(){
           
     }
 
+}
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("ORDINARY-LOVE");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+var modal1 = document.getElementById("myModal1");
+var btn1 = document.getElementById("VENOM");
+var span = document.getElementsByClassName("close")[1];
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+span.onclick = function() {
+  modal1.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
+
+var modal2 = document.getElementById("myModal2");
+var btn2 = document.getElementById("IT");
+var span = document.getElementsByClassName("close")[2];
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+span.onclick = function() {
+  modal2.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
 }
